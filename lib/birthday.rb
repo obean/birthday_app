@@ -21,11 +21,15 @@ class Birthday
   def days_til_birthday
     
     today= Date.parse(@today)
-    birthday= Date.parse(@birthday.gsub(/\d\d\d\d/, Time.now.year.to_s))
+   #p birthday= Date.parse(@birthday.gsub(/\d\d\d\d/, Time.now.year.to_s))
    # days = TimeDifference.between(birthday, today).in_days
-    if birthday > today
-      365 - TimeDifference.between(birthday, today).in_days.floor
-    elsif birthday < today
+    birthday = set_bday_year(Time.now.year.to_s)
+    if birthday < today
+     # birthday= Date.parse(@birthday.gsub(/\d\d\d\d/, "2021"))
+      birthday = set_bday_year("2021")
+     p birthday
+      p TimeDifference.between(today, birthday).in_days.floor
+    elsif birthday > today
       TimeDifference.between(birthday, today).in_days.floor
     end
     
@@ -37,6 +41,10 @@ class Birthday
     end
 =end    
   end
+  def set_bday_year(year)
+     Date.parse(@birthday.gsub(/\d\d\d\d/, year))
+  end
+
 
 
   def birthday_message
