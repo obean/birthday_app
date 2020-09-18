@@ -1,5 +1,34 @@
-<p> <%= $person.name %>  </p>
-<p><%= $person.birthday %> </p>
-<p><%= $person.today %> </p>
-<p> <%= $person.birthday? %> </p>
-<h1> <%= $person.birthday_message %> </h1>
+<style>
+  h1 {
+    color: blue;
+    font-family: Lobster;
+  }
+
+  .silver-background {
+    background-color: silver;
+    border-width: 5px;
+    border-style: solid;
+    position: fixed;
+   # top: 40%;
+    left: 10%;
+    margin-top: 100px;
+    margin-left 100px;
+  }
+
+  .header-background {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+   # position:fixed;
+    margin: 5px;
+    text-align:center;
+
+  }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<div style="background-image: url('https://image.freepik.com/free-vector/celebration-background-with-streamers_1284-5035.jpg'" class="silver-background"> 
+<image src="https://media3.giphy.com/media/1flBoMbPmdtruYLPXe/giphy.gif" </image>
+<h1 style="font-family: Lobster; color:blue"> <%= $person.birthday_message %> </h1>
+
+</div>
+
