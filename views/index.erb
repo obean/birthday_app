@@ -6,21 +6,37 @@
 
   .silver-background {
     background-color: silver;
+    border-width: 5px;
+    border-style: solid;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    margin-top: 100px;
+    margin-left 100px;
+  }
+
+  .header-background {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+   # position:fixed;
+    margin: 5px;
+
   }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <head>
-<h1> Hello There! </h1>
+
 </head>
 
 
 <div class="silver-background">
-
-<h2> Whats your name? </h2>
+<h1 class="header-background"  > Hello There! </h1>
+<h2 style="margin: 10px"> Whats your name? </h2>
 <link rel="stylesheet" href="index_style.css">
 <body>
 
-<form action="details" method="post" >
+<form action="details" method="post" style="margin: 10px" >
   
   <input type="text" name="name" placeholder="enter your name" required>
   <p> Whens your birthday? </p>
