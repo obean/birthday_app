@@ -3,17 +3,26 @@
 
 <html>
 <style>
-
-img {
+.silver-background {
+  background-color: silver;
+  border-width: 5px;
+  border-style: solid;
+  position: fixed;
+ # top: 40%;
+  left: 10%;
+  margin-top: 100px;
+  margin-left 100px;
+}
+.img {
   border-width: 5px;
   border-style: solid;
   border-radius: 100px;
         }
 </style>
-  
-    <h1> <%= $person.birthday_message %> </h1>
-
-    <image src="https://i.redd.it/dms4cdl95hv31.png" height="500" width="500" border-color="red" style="border-color:red; border-width:5px">
-
+ 
+<div class="silver-background"style="background-image: url('https://media.tenor.com/images/3b6a601ef378ba53cb8c1146d8abefb6/tenor.gif')">
+    <h1 style="background-color:white; margin:5px"> <%= $person.birthday_message %> </h1>
+    <img src="https://media4.giphy.com/media/u5eXlkXWkrITm/giphy.gif?cid=ecf05e47jpvp7lsn9cja2nqk08msox8vo90d6tjb02hvkny7&rid=giphy.gif">
+</div>
 
 </html>
