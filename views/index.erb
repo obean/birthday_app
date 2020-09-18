@@ -1,9 +1,33 @@
+<style>
+  h1 {
+    color: blue;
+    font-family: Lobster;
+  }
+
+  .silver-background {
+    background-color: silver;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<head>
 <h1> Hello There! </h1>
-<p> Whats your name? </p>
+</head>
+
+
+<div class="silver-background">
+
+<h2> Whats your name? </h2>
+<link rel="stylesheet" href="index_style.css">
+<body>
 
 <form action="details" method="post" >
-  <input type="text" name="name" required>
+  
+  <input type="text" name="name" placeholder="enter your name" required>
   <p> Whens your birthday? </p>
+  
   <input type="date" name="birthday" required>
   <input type="submit" value="GO">
+ 
 </form>
+</div>
+</body>
